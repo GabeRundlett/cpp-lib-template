@@ -3,7 +3,7 @@ execute_process(COMMAND vcpkg x-update-baseline)
 include(cmake/warnings.cmake)
 include(cmake/static_analysis.cmake)
 
-project(my_lib VERSION 0.1.0)
+project(my-lib VERSION 0.1.0)
 
 add_library(${PROJECT_NAME} "src/core.cpp")
 add_library(${PROJECT_NAME}::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
