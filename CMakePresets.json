@@ -13,6 +13,7 @@
             "toolchainFile": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
             "generator": "Ninja Multi-Config",
             "cacheVariables": {
+                "ENABLE_TESTS": true,
                 "ENABLE_STATIC_ANALYSIS": false
             }
         },

@@ -22,6 +22,8 @@ target_link_libraries(${PROJECT_NAME} PUBLIC fmt::fmt)
 # how this variable is used.
 list(APPEND PACKAGING_EXTRAS "find_package(fmt CONFIG REQUIRED)")
 
-add_subdirectory(tests)
+if(ENABLE_TESTS)
+    add_subdirectory(tests)
+endif()
 
 include(cmake/packaging.cmake)
